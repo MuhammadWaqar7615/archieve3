@@ -1,0 +1,102 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-[#F7F8FA] text-[#1B2935] font-sans antialiased selection:bg-[#FF9540] selection:text-white;
+  }
+}
+
+/* Custom smooth scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #d1d5db;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #9ca3af;
+}
+
+/* Benz Rajchakru (#0078d6) Theme Overrides */
+.theme-benz {
+  selection:bg-[#0078d6];
+}
+
+.theme-benz .text-\[\#FF9540\] {
+  color: #0078d6 !important;
+}
+
+.theme-benz .hover\:text-\[\#FF9540\]:hover {
+  color: #0078d6 !important;
+}
+
+.theme-benz .hover\:text-\[\#FF8420\]:hover {
+  color: #0066b8 !important;
+}
+
+.theme-benz .bg-\[\#FF9540\] {
+  background-color: #0078d6 !important;
+}
+
+.theme-benz .hover\:bg-\[\#FF9540\]:hover,
+.theme-benz .hover\:bg-\[\#FF8420\]:hover {
+  background-color: #0066b8 !important;
+}
+
+.theme-benz .active\:bg-\[\#FF8420\]:active {
+  background-color: #005299 !important;
+}
+
+.theme-benz .border-\[\#FF9540\] {
+  border-color: #0078d6 !important;
+}
+
+.theme-benz .focus\:border-\[\#FF9540\]:focus {
+  border-color: #0078d6 !important;
+}
+
+.theme-benz .bg-orange-50 {
+  background-color: #eff6ff !important;
+}
+
+.theme-benz .bg-orange-100 {
+  background-color: #dbeafe !important;
+}
+
+.theme-benz .hover\:bg-orange-50:hover {
+  background-color: #eff6ff !important;
+}
+
+.theme-benz .hover\:bg-orange-100:hover {
+  background-color: #dbeafe !important;
+}
+
+.theme-benz .border-orange-200,
+.theme-benz .border-orange-200\/50,
+.theme-benz .border-orange-200\/60 {
+  border-color: #bfdbfe !important;
+}
+
+.theme-benz .text-orange-500,
+.theme-benz .text-orange-600,
+.theme-benz .text-orange-700 {
+  color: #0078d6 !important;
+}
+
+.theme-benz .shadow-orange-500\/20 {
+  box-shadow: 0 10px 15px -3px rgba(0, 120, 214, 0.25) !important;
+}
+
+.theme-benz .ring-\[\#FF9540\],
+.theme-benz .ring-orange-100,
+.theme-benz .ring-orange-200,
+.theme-benz .ring-orange-500 {
+  --tw-ring-color: #0078d6 !important;
+}
